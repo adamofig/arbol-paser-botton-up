@@ -18,7 +18,7 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
 ##Explicación de algoritmo
 ---
 
-            while{ mientras existan tokens en entrada o haya cambios  
+    while{ mientras existan tokens en entrada o haya cambios  
             {si existen tokens entrada  
             for{
             si token actual puede cambiar por alguna regla entonces cambia .
