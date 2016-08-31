@@ -4,11 +4,16 @@
 ##¿Como funciona?
 -
 Ingresar las reglas de produccion , primero lado derecho y luego lado izquierdo, ejemplo. 
+
 S
+
 S+S
+
 esto es S=>S+S
-Ingresar la cadena de entrada. nota para facilidad del programa cada token de la entrada debe estar sepadado por ' ' (espacio en blanco) incluso el final. 
-ejemplo "id + id ". 
+
+Ingresar la cadena de entrada. nota para facilidad del programa cada token de la entrada debe estar sepadado por ' ' (espacio en blanco) incluso el final, ejemplo. 
+
+"id + id ". 
 
 
 
