@@ -59,7 +59,6 @@ ___
 * id cambia por S
 * stack:"S+S"
 * stack S+S cambia a S
-
 ___
 
 no hay más entradas termina el ciclo
@@ -68,6 +67,8 @@ stack es igual a 1° regla de producción lado derecho.
 
 ¡Cadena aceptada!
 
+
+___
 
 
 ###Ejemplo 2.
