@@ -35,7 +35,8 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
         }
     }
 
-###Ejemplo 1
+###Ejemplo 1.
+____
 
 ####reglas:
 1. S => S+S
@@ -67,7 +68,7 @@ stack es igual a 1° regla de producción lado derecho.
 
 
 
-###ejemplo 2
+###Ejemplo 2.
 ____
 ####reglas:
 1. S=>E
