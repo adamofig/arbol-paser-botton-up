@@ -80,7 +80,7 @@ ____
 ####entrada: 
 "( id + id ) ".
 
-###procedimiento. 
+####procedimiento. 
 * token "("
 * stack: "("
 ___
