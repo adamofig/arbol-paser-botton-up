@@ -1,9 +1,9 @@
-# Paser tree botton up - Análizador sintáctico ascendente.
-###acercamiento al método botton up para genrerar un arbol parser dadas las reglas de producción y una cadena de entrada.
+# Paser tree botton up - Analizador sintáctico ascendente.
+###acercamiento al método botton up para generar un arbol parser dadas las reglas de producción y una cadena de entrada.
 
-##¿Como funciona?
+##¿Cómo funciona?
 -
-Ingresar las reglas de produccion , primero lado derecho y luego lado izquierdo, ejemplo. 
+Ingresar las reglas de producción, primero lado derecho y luego lado izquierdo, ejemplo. 
 
 * S
 
@@ -11,7 +11,7 @@ Ingresar las reglas de produccion , primero lado derecho y luego lado izquierdo,
 
 esto es S=>S+S.
 
-Ingresar la cadena de entrada. nota para facilidad del programa cada token de la entrada debe estar sepadado por ' ' (espacio en blanco) incluso el final, ejemplo. 
+Ingresar la cadena de entrada. nota para facilidad del programa cada token de la entrada debe estar separado por ' ' (espacio en blanco) incluso el final, ejemplo. 
 
 * "id + id ". 
 
@@ -58,17 +58,17 @@ ___
 * id cambia por S
 * stack:"S+S"
 * stack S+S cambia a S
-***
-no hay mas entradas termina el ciclo
+___
+no hay más entradas termina el ciclo
 
-stack es igual a 1° regla de produccón lado derecho.
+stack es igual a 1° regla de producción lado derecho.
 
 ¡cadena aceptada!
 
 
 
 ###ejemplo 2
-
+####reglas:
 1. S=>E
 2. E=>T
 3. E=>E+T
@@ -80,32 +80,38 @@ stack es igual a 1° regla de produccón lado derecho.
 
 * token "("
 * stack: "("
+___
 * token: "id"
 * id cambia a T
 * stack: "(T"
+___
 * token:"+"
 * T cambia a E
 * stack: "(E+"
+___
 * token "id"
 * id cambia a T
 * stack:"(E+T"
+___
 * token:")"
 * E+T cambia a E
 * stack:"(E)"
-* no hay mas tokens pero hubo cambios 
+___
+* no hay más tokens pero hubo cambios 
 * (E) cambia a T
 * stack:"T"
+___
 * hubo cambios.
 * T cambia a E
 * stack:"E"
+___
+* hubo cambios
 * E cambia a S
 * stack:"S"
 
-no hay mas tokens, no hay cambios, termina el algoritmo. 
+no hay más tokens, no hay cambios, termina el algoritmo. 
 
-como stack es igual a 1° regla de produccion lado derecho.
-
-¡la cadena es aceptada!.
+como stack es igual a 1° regla de produccion lado derecho **¡la cadena es aceptada!.**
 
 
 
