@@ -38,14 +38,14 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
 ###Ejemplo 1.
 ____
 
-####reglas:
+####Reglas:
 1. S => S+S
 2. S => id
 
-####entrada: 
+####Entrada: 
 * id + id
 
-####procedimiento:
+####Procedimiento:
 * token="id";
 * id cambia por S
 * Stack: "S"
@@ -64,23 +64,23 @@ no hay más entradas termina el ciclo
 
 stack es igual a 1° regla de producción lado derecho.
 
-¡cadena aceptada!
+¡Cadena aceptada!
 
 
 
 ###Ejemplo 2.
 ____
-####reglas:
+####Reglas:
 1. S=>E
 2. E=>T
 3. E=>E+T
 4. T=>id
 5. T=>(E)
 
-####entrada: 
+####Entrada: 
 "( id + id ) ".
 
-####procedimiento. 
+####Procedimiento. 
 * token "("
 * stack: "("
 ___
@@ -122,6 +122,10 @@ ___
 No hay más tokens, no hay cambios, termina el algoritmo. 
 
 Como stack es igual a 1° regla de produccion lado derecho **¡la cadena es aceptada!.**
+
+####Nota: el algoritmo no funciona en los casos mas complicandos, ejemplo.
+
+Con las reglas del ejemplo 2 , la cadena "id + ( id + id ) "  produce error.
 
 
 
