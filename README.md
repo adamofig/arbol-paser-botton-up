@@ -1,22 +1,22 @@
-# arbol-paser-botton-up
-acercamiento al método botton up para pasear una gramática dadas las reglas de producción y una cadena de entrada.
-también conociodo como analizador sintactico ascendente. 
+# paser-tree-botton-up , análizador sintáctico ascendente.
+###acercamiento al método botton up para genrerar un arbol parser dadas las reglas de producción y una cadena de entrada.
 
-Ejemplo La entrada al algorimo son las reglas de producción.
-el algoritmo construye el arbol de las hojas a la raiz. 
-algoritmo shitf-reduce. 
-tiene 2 acciones básicas. 
-desplazar: consume un token de la cadena de entrada. 
-reducir: sustituye la partde derecha de la regla por la izquierda. 
-se utiliza una tabla de estados y una de análisis 
+##¿Como funciona?
+-
+Ingresar las reglas de produccion , primero lado derecho y luego lado izquierdo, ejemplo. 
+S
+S+S
+esto es S=>S+S
+Ingresar la cadena de entrada. nota para facilidad del programa cada token de la entrada debe estar sepadado por ' ' (espacio en blanco) incluso el final. 
+ejemplo "id + id ". 
 
 
 
-//procesa cadena token por token separados por ' ' (espacio)
-{ mientras existan tokens en entrada o haya sutituciones  
+
+{while existan tokens en entrada o haya cambios  
     {si existen tokens entrada  
       {for
-      si token actual puede cambiar por alguna regla entonces cambia.
+      si token actual puede cambiar por alguna regla entonces cambia .
       }
       agrega token a stack.
     }
@@ -24,36 +24,72 @@ se utiliza una tabla de estados y una de análisis
     si contenido en  stack puede cambiar con alguna regla entonces cambia.
     }
     {for
-    
+        si stack incia con '(' 
+            si contenido de stack despues de '('  puede cambiar entonces cambia.
     }
 }
 
-
-cuando acaba si esta 
-
+Ejemplo 1
+reglas:
 S => S+S
 S => id
-
 entrada: id + id
 ----
-temp="id";
+token="id";
 id cambia por S
-S se almacena en stack 
 Stack: "S"
 ---
-temp ="+"
-+ se almancena en stack
+token ="+"
 stack: "S+"
 ----
-temp="id"
+token="id"
 id cambia por S
-S se almacena en stack 
 stack:"S+S"
-el stack S+S cambia a S
+stack S+S cambia a S
 ---
 no hay mas entradas termina el ciclo
-si stack igual a primera regla de producion del lado izquierdo
-aceptada
+stack es igual a 1° regla de produccón lado derecho.
+¡cadena aceptada!
+
+
+
+ejemplo 2
+1. S=>E
+2. E=>T
+3. E=>E+T
+4. T=>id
+5. T=>(E)
+
+entrada "( id + id ) ".
+
+token "("
+stack: "("
+token: "id"
+id cambia a T
+stack: "(T"
+token:"+"
+T cambia a E
+stack: "(E+"
+token "id"
+id cambia a T
+stack:"(E+T"
+token:")"
+E+T cambia a E
+stack:"(E)"
+no hay mas tokens pero hubo cambios 
+(E) cambia a T
+stack:"T"
+hubo cambios.
+T cambia a E
+stack:"E"
+E cambia a S
+stack:"S"
+no hay mas tokens, no hay cambios, termina el algoritmo. 
+como stack es igual a 1° regla de produccion lado derecho.
+¡la cadena es aceptada!
+
+
+
 
 
 
