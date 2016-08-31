@@ -35,26 +35,27 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
         }
     }
 
-####Ejemplo 1
+###Ejemplo 1
 
-reglas:
+####reglas:
 * S => S+S
 * S => id
 
-entrada: 
+####entrada: 
 * id + id
 
-*token="id";
-*id cambia por S
-*Stack: "S"
+####procedimiento
+* token="id";
+* id cambia por S
+* Stack: "S"
 
-*token ="+"
-*stack: "S+"
+* token ="+"
+* stack: "S+"
 
-*token="id"
-*id cambia por S
-*stack:"S+S"
-*stack S+S cambia a S
+* token="id"
+* id cambia por S
+* stack:"S+S"
+* stack S+S cambia a S
 
 no hay mas entradas termina el ciclo
 
