@@ -40,6 +40,7 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
 reglas:
 * S => S+S
 * S => id
+
 entrada: 
 * id + id
 ----
