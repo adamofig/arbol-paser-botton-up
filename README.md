@@ -48,17 +48,17 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
 * token="id";
 * id cambia por S
 * Stack: "S"
-
+- - -
 
 * token ="+"
 * stack: "S+"
-
+___
 
 * token="id"
 * id cambia por S
 * stack:"S+S"
 * stack S+S cambia a S
-
+***
 no hay mas entradas termina el ciclo
 
 stack es igual a 1° regla de produccón lado derecho.
@@ -75,33 +75,37 @@ stack es igual a 1° regla de produccón lado derecho.
 4. T=>id
 5. T=>(E)
 
-entrada "( id + id ) ".
+####entrada: 
+"( id + id ) ".
 
-token "("
-stack: "("
-token: "id"
-id cambia a T
-stack: "(T"
-token:"+"
-T cambia a E
-stack: "(E+"
-token "id"
-id cambia a T
-stack:"(E+T"
-token:")"
-E+T cambia a E
-stack:"(E)"
-no hay mas tokens pero hubo cambios 
-(E) cambia a T
-stack:"T"
-hubo cambios.
-T cambia a E
-stack:"E"
-E cambia a S
-stack:"S"
+* token "("
+* stack: "("
+* token: "id"
+* id cambia a T
+* stack: "(T"
+* token:"+"
+* T cambia a E
+* stack: "(E+"
+* token "id"
+* id cambia a T
+* stack:"(E+T"
+* token:")"
+* E+T cambia a E
+* stack:"(E)"
+* no hay mas tokens pero hubo cambios 
+* (E) cambia a T
+* stack:"T"
+* hubo cambios.
+* T cambia a E
+* stack:"E"
+* E cambia a S
+* stack:"S"
+
 no hay mas tokens, no hay cambios, termina el algoritmo. 
+
 como stack es igual a 1° regla de produccion lado derecho.
-¡la cadena es aceptada!
+
+¡la cadena es aceptada!.
 
 
 
