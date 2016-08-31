@@ -16,22 +16,22 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
 * "id + id ". 
 
 ##Explicación de algoritmo
--
+---
 
             while{ mientras existan tokens en entrada o haya cambios  
-                   {si existen tokens entrada  
-                      for{
-                      si token actual puede cambiar por alguna regla entonces cambia .
-                      }
-                  agrega token a stack.
-                }
-                for{
-                si contenido en  stack puede cambiar con alguna regla entonces cambia.
-                }
-                for{
-                    si stack incia con '(' 
-                        si contenido de stack despues de '('  puede cambiar entonces cambia.
-                }
+            {si existen tokens entrada  
+            for{
+            si token actual puede cambiar por alguna regla entonces cambia .
+            }
+            agrega token a stack.
+            }
+            for{
+            si contenido en  stack puede cambiar con alguna regla entonces cambia.
+            }
+            for{
+            si stack incia con '(' 
+            si contenido de stack despues de '('  puede cambiar entonces cambia.
+            }
             }
 
 Ejemplo 1
