@@ -123,7 +123,7 @@ No hay más tokens, no hay cambios, termina el algoritmo.
 
 Como stack es igual a 1° regla de produccion lado derecho **¡la cadena es aceptada!.**
 
-####Nota: el algoritmo no funciona en los casos mas complicandos, ejemplo.
+###Nota: el algoritmo no funciona en los casos más complicados, ejemplo.
 
 Con las reglas del ejemplo 2 , la cadena "id + ( id + id ) "  produce error.
 
