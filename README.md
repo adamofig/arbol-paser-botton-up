@@ -13,15 +13,15 @@ esto es S=>S+S.
 
 Ingresar la cadena de entrada. nota para facilidad del programa cada token de la entrada debe estar separado por ' ' (espacio en blanco) incluso el final, ejemplo. 
 
-* "id + id ". 
+* "id + id "
 
 ##Explicación de algoritmo
 ---
 
     while{ mientras existan tokens en entrada o haya cambios  
-            {si existen tokens entrada  
+            {si existen tokens en entrada  
                 for{
-                si token actual puede cambiar por alguna regla entonces cambia .
+                si token actual puede cambiar con alguna regla entonces cambia .
                 }
                 agrega token a stack.
             }
@@ -60,6 +60,7 @@ ___
 * stack:"S+S"
 * stack S+S cambia a S
 ___
+
 no hay más entradas termina el ciclo
 
 stack es igual a 1° regla de producción lado derecho.
