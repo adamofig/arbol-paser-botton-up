@@ -5,9 +5,9 @@
 -
 Ingresar las reglas de produccion , primero lado derecho y luego lado izquierdo, ejemplo. 
 
-S
+* S
 
-S+S
+* S+S
 
 esto es S=>S+S
 
