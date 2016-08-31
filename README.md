@@ -43,26 +43,28 @@ reglas:
 
 entrada: 
 * id + id
-----
-token="id";
-id cambia por S
-Stack: "S"
----
-token ="+"
-stack: "S+"
-----
-token="id"
-id cambia por S
-stack:"S+S"
-stack S+S cambia a S
----
+
+*token="id";
+*id cambia por S
+*Stack: "S"
+
+*token ="+"
+*stack: "S+"
+
+*token="id"
+*id cambia por S
+*stack:"S+S"
+*stack S+S cambia a S
+
 no hay mas entradas termina el ciclo
+
 stack es igual a 1° regla de produccón lado derecho.
+
 ¡cadena aceptada!
 
 
 
-ejemplo 2
+####ejemplo 2
 1. S=>E
 2. E=>T
 3. E=>E+T
