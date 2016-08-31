@@ -1,4 +1,4 @@
-# paser-tree-botton-up , análizador sintáctico ascendente.
+# Paser tree botton up - Análizador sintáctico ascendente.
 ###acercamiento al método botton up para genrerar un arbol parser dadas las reglas de producción y una cadena de entrada.
 
 ##¿Como funciona?
