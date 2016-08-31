@@ -59,6 +59,7 @@ ___
 * id cambia por S
 * stack:"S+S"
 * stack S+S cambia a S
+
 ___
 
 no hay más entradas termina el ciclo
