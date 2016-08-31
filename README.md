@@ -38,19 +38,21 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
 ###Ejemplo 1
 
 ####reglas:
-* S => S+S
-* S => id
+1. S => S+S
+2. S => id
 
 ####entrada: 
 * id + id
 
-####procedimiento
+####procedimiento:
 * token="id";
 * id cambia por S
 * Stack: "S"
 
+
 * token ="+"
 * stack: "S+"
+
 
 * token="id"
 * id cambia por S
@@ -65,7 +67,8 @@ stack es igual a 1° regla de produccón lado derecho.
 
 
 
-####ejemplo 2
+###ejemplo 2
+
 1. S=>E
 2. E=>T
 3. E=>E+T
