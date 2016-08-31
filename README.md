@@ -1,5 +1,5 @@
-# Paser tree botton up - Analizador sintáctico ascendente-Java.
-###acercamiento al método botton up para generar un arbol parser dadas las reglas de producción y una cadena de entrada.
+# Paser tree botton up - Analizador sintáctico ascendente - Java.
+###Acercamiento al método botton up para generar un arbol parser dadas las reglas de producción y una cadena de entrada.
 
 ##¿Cómo funciona?
 -
