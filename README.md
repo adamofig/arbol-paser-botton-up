@@ -9,30 +9,30 @@ Ingresar las reglas de produccion , primero lado derecho y luego lado izquierdo,
 
 * S+S
 
-esto es S=>S+S
+esto es S=>S+S.
 
 Ingresar la cadena de entrada. nota para facilidad del programa cada token de la entrada debe estar sepadado por ' ' (espacio en blanco) incluso el final, ejemplo. 
 
-"id + id ". 
+* "id + id ". 
 
 
 
 
-{while existan tokens en entrada o haya cambios  
-    {si existen tokens entrada  
-      {for
-      si token actual puede cambiar por alguna regla entonces cambia .
-      }
-      agrega token a stack.
+    while{ mientras existan tokens en entrada o haya cambios  
+           {si existen tokens entrada  
+              for{
+              si token actual puede cambiar por alguna regla entonces cambia .
+              }
+          agrega token a stack.
+        }
+        for{
+        si contenido en  stack puede cambiar con alguna regla entonces cambia.
+        }
+        for{
+            si stack incia con '(' 
+                si contenido de stack despues de '('  puede cambiar entonces cambia.
+        }
     }
-    {for
-    si contenido en  stack puede cambiar con alguna regla entonces cambia.
-    }
-    {for
-        si stack incia con '(' 
-            si contenido de stack despues de '('  puede cambiar entonces cambia.
-    }
-}
 
 Ejemplo 1
 reglas:
