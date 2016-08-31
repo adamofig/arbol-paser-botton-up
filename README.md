@@ -35,11 +35,11 @@ Ingresar la cadena de entrada. nota para facilidad del programa cada token de la
         }
     }
 
-Ejemplo 1
+####Ejemplo 1
 
 reglas:
-** S => S+S
-** S => id
+* S => S+S
+* S => id
 entrada: 
 * id + id
 ----
