@@ -68,6 +68,7 @@ stack es igual a 1° regla de producción lado derecho.
 
 
 ###ejemplo 2
+____
 ####reglas:
 1. S=>E
 2. E=>T
@@ -81,37 +82,44 @@ stack es igual a 1° regla de producción lado derecho.
 * token "("
 * stack: "("
 ___
+
 * token: "id"
 * id cambia a T
 * stack: "(T"
 ___
+
 * token:"+"
 * T cambia a E
 * stack: "(E+"
 ___
+
 * token "id"
 * id cambia a T
 * stack:"(E+T"
 ___
+
 * token:")"
 * E+T cambia a E
 * stack:"(E)"
 ___
+
 * no hay más tokens pero hubo cambios 
 * (E) cambia a T
 * stack:"T"
 ___
+
 * hubo cambios.
 * T cambia a E
 * stack:"E"
 ___
+
 * hubo cambios
 * E cambia a S
 * stack:"S"
 
-no hay más tokens, no hay cambios, termina el algoritmo. 
+No hay más tokens, no hay cambios, termina el algoritmo. 
 
-como stack es igual a 1° regla de produccion lado derecho **¡la cadena es aceptada!.**
+Como stack es igual a 1° regla de produccion lado derecho **¡la cadena es aceptada!.**
 
 
 
